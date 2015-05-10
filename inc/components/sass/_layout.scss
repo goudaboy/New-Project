@@ -1,0 +1,40 @@
+$base-color-success : green;
+$base-color-error : red;
+$base-color-default: pink;
+
+input{
+
+	padding-left:15px;
+	border-width: 2px;
+	border-style: solid; 
+
+	&.error{
+		border-color: $base-color-error;
+		color: $base-color-error;
+	}
+
+	&.success{
+		border-color: $base-color-success;
+		color: $base-color-success;
+	}
+
+	@include border-radius(4px, 4px);
+
+}
+
+div.submit{
+
+	&.error{
+		background-color: $base-color-error;
+		color: white;
+	}
+
+	&.success{
+		background-color: $base-color-success;
+		color: white;
+	}
+
+	@include border-radius(4px, 4px);
+
+}
+
